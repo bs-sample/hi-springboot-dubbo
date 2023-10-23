@@ -1,0 +1,13 @@
+server:
+  #default port 8080
+  port: 8080
+
+spring:
+  application:
+    name: dubbo-consumer
+
+dubbo:
+  application:
+    # 当前服务/应用的名字
+    name: ${spring.application.name}
+    qos-enable: false

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: dubbo-provider
+
+dubbo:
+  application:
+    # 当前服务/应用的名字
+    name: ${spring.application.name}
+    qos-enable: false
+  protocol:
+    name: dubbo
+    # default 20881
+    port: 20881
